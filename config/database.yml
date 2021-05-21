@@ -52,6 +52,11 @@ test:
 #
 production:
   <<: *default
-  database: elan_manager_api_production
-  username: elan_manager_api
-  password: <%= ENV['ELAN_MANAGER_API_DATABASE_PASSWORD'] %>
+  adapter: mysql2
+  encoding: utf8mb4
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: <%= ENV.fetch("MARIADB_USERNAME") %>
+  password: <%= ENV.fetch("MARIADB_PASSWORD") %>
+  database: <%= ENV.fetch("MARIADB_DATABASE") %>
+  host: <%= ENV.fetch("MARIADB_HOST") %>
+  port: 3306
