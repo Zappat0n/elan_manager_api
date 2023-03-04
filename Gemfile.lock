@@ -111,7 +111,7 @@ GEM
       rack
       rake (>= 0.8.1)
     racc (1.6.2)
-    rack (2.2.3)
+    rack (2.2.6.3)
     rack-cors (1.1.1)
       rack (>= 2.0.0)
     rack-test (2.0.2)
@@ -175,6 +175,7 @@ DEPENDENCIES
   listen (~> 3.3)
   mysql2 (~> 0.5)
   passenger (>= 5.0.25)
+  rack (~> 2.2.6)
   rack-cors
   rails (~> 6.1.7)
   spring
