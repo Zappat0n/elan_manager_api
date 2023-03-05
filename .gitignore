@@ -22,10 +22,11 @@
 /storage/*
 !/storage/.keep
 .byebug_history
-.gitignore
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
 /config/application.yml
+.gitignore
 /.idea
+/.env

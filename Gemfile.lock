@@ -68,6 +68,10 @@ GEM
     concurrent-ruby (1.2.2)
     crass (1.0.6)
     date (3.3.3)
+    dotenv (2.8.1)
+    dotenv-rails (2.8.1)
+      dotenv (= 2.8.1)
+      railties (>= 3.2)
     erubi (1.12.0)
     ffi (1.15.0)
     figaro (1.2.0)
@@ -171,6 +175,7 @@ DEPENDENCIES
   bigdecimal
   bootsnap (>= 1.4.4)
   byebug
+  dotenv-rails
   figaro
   listen (~> 3.3)
   mysql2 (~> 0.5)
